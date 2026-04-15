@@ -1,0 +1,19 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "calibre-forms",
+	"compatibility_date": "2025-04-04",
+	"compatibility_flags": [
+        "nodejs_compat"
+    ],
+	"main": "./workers/app.ts",
+	"observability": {
+		"enabled": true
+	},
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "formzero",
+			"database_id": "b50490f1-bf66-4449-990d-9d5bf66701ff",
+		}
+	]
+}
